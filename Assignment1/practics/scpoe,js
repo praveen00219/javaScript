@@ -1,0 +1,40 @@
+// //----------- funcational scope | block scope | global scope-----------------
+// // var has a functional scope
+// // var variable have funcational scope
+// // let variable have block scope
+
+// fun();
+// function fun() {
+//   console.log(v);
+//   if (true) {
+//     console.log(l); //
+//   }
+//   console.log(v); // 78
+//   console.log(l); // Refrence Error
+// }
+// console.log(v);
+// var v = 78;
+// var v = 89;
+// let l = 89;
+
+// try {
+//   y = 90;
+// } catch (e) {
+//   console.log(e.message); // ReferenceError: y is not defined
+// }
+// console.log(y);
+// var a; // => declaration of variable
+
+// //-------- you can use var variables before its declaration but value of that variable will be undefined---------
+// //-------- you can't use let,const before its declaration-------------
+function abc() {
+  var g = 34;
+  function def() {
+    console.log(g); //
+  }
+  return def;
+}
+const z = abc();
+// z();
+y = 78;
+console.log(y);
